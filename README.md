@@ -1,5 +1,7 @@
 # Caffeine
 
-适配声明与可运行示例位于 `caffeine/cache`，固定 Caffeine 3.2.4，发布坐标为 `caffeine:cache:1`。公开面覆盖常用容量与过期配置、显式缓存读写、映射加载、失效、清理和统计。
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-独立 NAR 消费、传递依赖解析、Norm Duration、回调加载和缓存统计由 `CaffeineBindingIntegrationTest` 验收。完整 census 与未支持原因位于 NAR 的 `binding/java-api.json`。
+The adapter declaration and runnable example are in `caffeine/cache`. It pins Caffeine 3.2.4 and publishes as `caffeine:cache:1`. The public API covers common capacity and expiration settings, explicit cache reads and writes, mapping loads, invalidation, cleanup, and statistics.
+
+`CaffeineBindingIntegrationTest` covers standalone NAR consumption, transitive dependency resolution, Norm Duration, callback loading, and cache statistics. The complete API census and reasons for unsupported APIs are in the NAR's `binding/java-api.json`.
