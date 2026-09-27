@@ -1,0 +1,17 @@
+import caffeine.cache.Cache
+import caffeine.cache.Caffeine
+import caffeine.cache.caffeineNewBuilder
+
+main() {
+  Caffeine<Any?, Any?> builder = caffeineNewBuilder()!!
+  Caffeine<Any?, Any?> bounded = builder.maximumSize(2)!!
+  Cache<String?, String?> cache = bounded.build<String, String>()!!
+  cache.put(arg0: "language", arg1: "Norm")
+  printLine(cache.getIfPresent("language") ?? "missing")
+  cache.invalidate("language")
+  printLine(cache.getIfPresent("language") ?? "missing")
+}
+
+Module module() {
+  module(dependencies: [dependency(repository: "github", name: "caffeine.cache", version: 2)])
+}
