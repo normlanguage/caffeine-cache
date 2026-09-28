@@ -1,4 +1,8 @@
-package caffeine.cache
+package sample.caffeine.cache
+
+import caffeine.cache.Cache
+import caffeine.cache.Caffeine
+import caffeine.cache.caffeineNewBuilder
 
 import std.time.Duration
 import std.time.duration

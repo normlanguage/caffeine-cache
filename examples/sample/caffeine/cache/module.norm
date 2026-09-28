@@ -1,0 +1,7 @@
+Module module() {
+  return module(
+    name: "sample.caffeine.cache",
+    version: 1,
+    dependencies: [dependency(repository: "github", name: "caffeine.cache", version: 3)]
+  )
+}

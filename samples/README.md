@@ -19,4 +19,4 @@ Norm
 missing
 ```
 
-API reference: [module.norm](../caffeine/cache/module.norm) lists the exposed `Caffeine` and `Cache`. The module's `Main.norm` remains its own adapter integration entry point.
+API reference: [module.norm](../caffeine/cache/module.norm) lists the exposed `Caffeine` and `Cache`. The [adapter acceptance example](../examples/sample/caffeine/cache/Main.norm) exercises additional binding behavior.
