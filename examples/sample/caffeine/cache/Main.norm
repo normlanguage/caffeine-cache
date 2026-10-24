@@ -22,7 +22,7 @@ Void main() {
             printLine(cache.getIfPresent("language") ?? "missing")
             Function<String?(String?)>? loader = (key) { return (key ?? "") + "-loaded" }
             printLine(cache.get(arg0: "binding", arg1: loader) ?? "missing")
-            printLine(cache.stats().loadSuccessCount())
+            printLine(cache.stats()?.loadSuccessCount() ?? 0)
           }
         }
       }
