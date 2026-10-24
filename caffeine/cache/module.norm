@@ -2,6 +2,7 @@ Module module() {
   return module(
     name: "caffeine.cache",
     version: 3,
+    exports: ["Caffeine", "Cache", "CacheStats"],
     binding: jarBinding(
       target: mavenJar(
         group: "com.github.ben-manes.caffeine",
