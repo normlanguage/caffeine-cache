@@ -4,13 +4,12 @@ import caffeine.cache.Cache
 import caffeine.cache.Caffeine
 import caffeine.cache.caffeineNewBuilder
 
-import std.time.Duration
-import std.time.duration
+import java.base.time.durationOfSeconds
 
 Void main() {
   Caffeine<Any, Any>? builder = caffeineNewBuilder()
   if builder != null {
-    Duration? ttl = duration(seconds: 60, nanoseconds: 0)
+    var ttl = durationOfSeconds(60)
     Caffeine<Any, Any>? bounded = builder.maximumSize(100)
     if bounded != null {
       Caffeine<Any, Any>? configured = bounded.expireAfterWrite(ttl)
