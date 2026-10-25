@@ -10,7 +10,7 @@ import std.time.duration
 Void main() {
   Caffeine<Any, Any>? builder = caffeineNewBuilder()
   if builder != null {
-    Duration? ttl = duration(seconds: 60, nanoseconds: 0)
+    var ttl = durationOfSeconds(60)
     Caffeine<Any, Any>? bounded = builder.maximumSize(100)
     if bounded != null {
       Caffeine<Any, Any>? configured = bounded.expireAfterWrite(ttl)
@@ -23,11 +23,12 @@ Void main() {
             printLine(cache.getIfPresent("language") ?? "missing")
             Function<String?(String?)>? loader = (key) { return (key ?? "") + "-loaded" }
             printLine(cache.get(arg0: "binding", arg1: loader) ?? "missing")
-            printLine(cache.stats().loadSuccessCount())
+            printLine(cache.stats()?.loadSuccessCount() ?? 0)
           }
         }
       }
     }
   }
 }
+
 
