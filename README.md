@@ -7,3 +7,5 @@ The adapter declaration and runnable example are in `caffeine/cache`. It pins Ca
 `CaffeineBindingIntegrationTest` covers standalone NAR consumption, transitive dependency resolution, Norm Duration, callback loading, and cache statistics. The complete API census and reasons for unsupported APIs are in the NAR's `binding/java-api.json`.
 
 [Runnable samples](samples/README.md) demonstrate the library as an external Norm dependency.
+
+[License](LICENSE)
