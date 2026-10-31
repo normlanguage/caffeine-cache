@@ -1,6 +1,6 @@
 # caffeine.cache Skill
 
-Use this skill to work with Norm module `caffeine.cache` version 3. Use only declarations listed below.
+Use this skill to work with Norm module `caffeine.cache` version 4. Use only declarations listed below.
 
 ## `caffeine.cache`
 
